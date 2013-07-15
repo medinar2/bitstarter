@@ -5,7 +5,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request) {});
 
-fs.readFile('/home/ubuntu/bitstarter/index.html', function (err, data) {
+fs.readFileSync('/home/ubuntu/bitstarter/index.html', function (err, data) {
     if (err) throw err;
     console.log(data);
 });
